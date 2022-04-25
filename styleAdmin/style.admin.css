@@ -1,0 +1,26 @@
+
+
+
+.cartShow{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: var(--wt);
+}
+
+.cartShow ul{
+    list-style: none;
+    display: flex;
+}
+
+.cartShow ul li{
+    padding: 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+
+
+.mglf{
+    padding-left: 40px;
+}

@@ -1,0 +1,153 @@
+
+
+.singinBOX{
+    width: 70%;
+    height: 550px;
+    margin: 90px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.formBOX , .imageBOX{
+    width: 50%;
+    height: 100%;
+    background-color: var(--wt);
+}
+
+
+.imageBOX{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px 0 0 25px; 
+}
+
+.se_color{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: var(--gre);
+    bottom: -87px;
+    left: -98px;
+    z-index: 0;
+}
+
+.imageBOX img{
+    width: 60%;
+    z-index: 1;
+}
+
+.formBOX{
+    padding-left: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius:  0 20px 25px 0 ; 
+}
+
+.contentForm{
+    margin-bottom: 40px;
+}
+
+.contentForm span{
+    display: block;
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+.contentForm span:first-child{
+    color: var(--gre);
+    font-size: 40px;
+    font-weight: 800;
+}
+
+
+.inputPass , .inputUser{
+    margin: 40px 0;
+}
+
+.inputPass label , .inputUser label{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    display: none;
+}
+
+.inputUser input , .inputPass input{
+    display: block;
+    padding: 10px;
+    width: 70%;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 4px solid var(--gre);
+}
+
+.singin{
+    display: block;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    width: 70%;
+    height: 40px;
+    margin-top: 25px;
+    background-color: var(--org);
+    color: var(--wt);
+    text-transform: capitalize;
+    font-size: 19px;
+}
+
+::placeholder {
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+
+
+.singup{
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.singup a{
+    color: var(--grebl);
+}
+
+
+
+
+@media screen and (min-width: 600px) and  (max-width: 1509px) {
+    .content{
+        width: 100%;
+    }
+  }
+
+
+
+  @media screen and   (max-width: 900px) {
+
+    .content{
+        width: 100%;
+    }
+
+    .singinBOX{
+        width: 100%;
+        height: auto;
+        padding: 30px 10px;
+        flex-direction: column-reverse;
+    }
+
+    .formBOX , .imageBOX{
+        width: 100%;
+        height: auto;
+        background-color: var(--wt);
+        border-radius: 0;
+        padding: 20px ;
+        padding-left: 50px;
+    }
+  }
